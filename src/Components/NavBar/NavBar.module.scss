@@ -17,6 +17,16 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+
+  background-image: linear-gradient(currentColor, currentColor);
+  background-position: 50% 100%;
+  background-repeat: no-repeat;
+  background-size: 0% 1px;
+  transition: background-size .3s;
+
+  &:hover {
+    background-size: 100% 1px;
+  }
 }
 
 .button {
@@ -29,11 +39,21 @@
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 1px;
+    transition: background-size .3s;
   }
 
   &__icon {
     width: 49px;
     height: 49px;
     border-radius: 50%;
+  }
+
+  &:hover > &__text {
+      background-size: 100% 1px;
   }
 }
