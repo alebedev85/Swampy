@@ -1,0 +1,39 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  gap: 139px;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  gap: 88px;
+}
+
+.link {
+  margin: 0;
+  padding: 0;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.button {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+
+  &__text {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &__icon {
+    width: 49px;
+    height: 49px;
+    border-radius: 50%;
+  }
+}

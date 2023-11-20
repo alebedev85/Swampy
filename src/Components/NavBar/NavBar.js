@@ -3,8 +3,8 @@ import { NavLink } from 'react-router-dom';
 
 function NavBar({ icon, name }) {
   return (
-    <nav className='navbar navbar_gap_48 navbar_padding-right_9'>
-      <ul className='navbar__links hidden'>
+    <nav className={styles.navbar}>
+      <ul className={`list ${styles.list}`}>
         <li>
           <NavLink
             to={'/tasks'}
@@ -21,7 +21,7 @@ function NavBar({ icon, name }) {
         </li>
       </ul>
       <NavLink to={'/profile'} className={`button ${styles.button}`}>
-        <p className={styles.button__text}>
+        <p className={`link ${styles.button__text}`}>
           {name}
         </p>
         <img
@@ -29,8 +29,8 @@ function NavBar({ icon, name }) {
           src={icon}
           alt='Иконка пользователя' />
       </NavLink>
-      </nav>
-      )
+    </nav>
+  )
 }
 
-      export default NavBar;
+export default NavBar;
