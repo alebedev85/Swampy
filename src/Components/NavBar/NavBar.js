@@ -20,7 +20,7 @@ function NavBar({ icon, name }) {
           </NavLink>
         </li>
       </ul>
-      <NavLink to={'/profile'} className={`button ${styles.button}`}>
+      <NavLink to={'/profile'} className={`link ${styles.button}`}>
         <p className={`link ${styles.button__text}`}>
           {name}
         </p>
