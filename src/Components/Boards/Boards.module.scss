@@ -1,0 +1,32 @@
+.section {
+  padding: 52px 0 52px 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+
+.link {
+  display: block;
+  max-width: 718px;
+  border-radius: 10px;
+  border: 1px solid #000;
+
+  &__text {
+    margin: 0;
+    padding: 15px 0;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+
+  &_new {
+    max-width: 275px;
+  }
+}

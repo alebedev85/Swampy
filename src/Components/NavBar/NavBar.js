@@ -7,7 +7,7 @@ function NavBar({ icon, name }) {
       <ul className={`list ${styles.list}`}>
         <li>
           <NavLink
-            to={'/tasks'}
+            to={'/boards'}
             className={`link ${styles.link}`}>
             Доска задач
           </NavLink>

@@ -8,11 +8,16 @@
   list-style-type: none;
 }
 
-.link{
+.link {
   margin: 0;
   padding: 0;
   color: inherit;
   text-decoration: none;
+
+  &:hover {
+    opacity: 0.80;
+    cursor: pointer;
+  }
 }
 
 .button {
@@ -25,9 +30,9 @@
   cursor: pointer;
   box-sizing: border-box;
   text-align: center;
-}
 
-.button:hover {
-  opacity: 0.80;
-  cursor: pointer;
+  &:hover {
+    opacity: 0.80;
+    cursor: pointer;
+  }
 }
