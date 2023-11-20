@@ -3,6 +3,7 @@ import './App.scss';
 import { Routes, Route } from 'react-router-dom';
 import Header from '../Header/Header'
 import Boards from '../Boards/Boards';
+import Board from '../Board/Board';
 
 function App() {
   return (
@@ -13,6 +14,9 @@ function App() {
           element={<section></section>} />
         <Route path={'/boards'}
           element={<Boards />}
+        />
+        <Route path={'/boards/*'}
+          element={<Board />}
         />
       </Routes>
 
